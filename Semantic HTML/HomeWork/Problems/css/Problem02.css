@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#content{
+    background-color: #FFC0CB;
+    width: 980px;
+    height: 420px;
+    margin: 0 auto;
+    border-radius:10px;
+    padding-left:10px;
+    padding-top: 10px;
+}
+h1{
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+figure{
+    font-size: 20px;
+    width: 200px;
+}
+
+#audio{
+    float: left;
+    margin-left: 200px;
+    margin-top: -272px;
+    display: block;
+}
+
+video {
+    height: 255px;
+}
+
+#video{
+    margin-right: 276px;
+    margin-top: -272px;
+    float: right;
+}

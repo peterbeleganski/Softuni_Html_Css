@@ -1,0 +1,43 @@
+body, section, main, h1 {
+    margin:0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+#main {  /* Old versions of IE do not support <main> tag so I did it with div */
+    width:500px;
+    height: 350px;
+    background: black;
+    color:#FF9933;
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    position: absolute;
+    top:50%;
+    margin-top: -175px;
+    width:100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin-top:100px;
+    margin-left:50px;
+}
+
+iframe {
+    margin-top:50px;
+}
+
+a {
+    text-decoration: none;
+    color:#FF9933;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/Problem02.css" rel="stylesheet">
+    <title>Kent's Media Profile</title>
+</head>
+<body>
+<div id="content">
+    <h1>Profile</h1>
+    <figure>
+        <figcaption>User:Kent</figcaption>
+        <img src="images/kent.png">
+        <figcaption>
+            <p>Profile completed 60%</p>
+            <meter value="0.6" min="0" max="1">60%</meter>
+        </figcaption>
+    </figure>
+
+    <figure id="audio">
+        <figcaption>Uploaded audio files</figcaption>
+        <embed src="audio/louis_armstrong-wonderful_world.mp3"/>
+        <br/>
+        <audio controls>
+            <source src="audio/bob_marley-dont_worry_be_happy.mp3" type="audio/mp3">
+        </audio> <br/>
+        <audio controls="controls">
+            <source src="audio/katy_perry-roar.mp3" type="audio/mp3">
+        </audio><br/>
+        <audio controls="controls">
+            <source src="audio/adele-someone_like_you.mp3" type="audio/mp3">
+        </audio><br/>
+    </figure>
+
+    <figure id="video">
+        <figcaption>Uploaded Video Files</figcaption>
+        <video controls>
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
+            Your browser does not support video tag.
+        </video>
+
+    </figure>
+</div>
+</body>
+</html>

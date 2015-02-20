@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <script>
+        function myFunc() {
+            var x = {name: "Nakov", years: 15};
+            document.getElementById('txtarea').innerHTML += x.name+" <br/>";
+        }
+    </script>
+    <style>
+        #form {
+            width: 350px;
+            height: 350px;
+            background-color: #2A6496;
+            padding: 10px;
+        }
+
+        legend {
+            font-size: 20px;
+            text-align: center;
+            color: skyblue;
+        }
+
+        label {
+            font-size: 25px;
+            width: 120px;
+            padding: 10px;
+            color: #99FF33;
+        }
+
+        span {
+            width: 70px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 15px;
+            margin: 10px;
+            width: 250px;
+        }
+
+        input[type="text"], input[type="password"] {
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        #pass {
+            margin-right: 15px;
+        }
+
+        fieldset {
+            color: skyblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FF9C00;
+        }
+
+        input[type='button'] {
+            font-size: 20px;
+            background-color: #2A6496;
+            color: white;
+            width: 110px;
+            font-style: italic;
+            padding: 5px;
+            float: right;
+            border-radius: 10px;
+            border-color: #FF9C00;
+        }
+
+        input[type='button']:hover {
+            background-color: skyblue;
+        }
+
+        #txtarea {
+            background-color: tomato;
+            width: 500px;
+            height: 360px;
+            padding: 10px;
+            float: right;
+            margin-top: -370px;
+            margin-right: 500px;
+            overflow: scroll;
+        }
+
+        #txtarea p {
+            background-color: white;
+            font-size: 20px;
+            font-style: italic;
+            font-family: cursive;
+            padding: 10px;
+        }
+
+        #txtarea p strong {
+            font-style: italic;
+            text-decoration: underline;
+            color: #2A6496;
+        }
+
+        #heading {
+            font-size: 25px;
+            background-color: skyblue;
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        #error {
+            color: #FF0000;
+            font-style: italic;
+            font-size: 20px;
+            padding: 10px;
+            font-family: Arial;
+        }
+
+        #btn {
+            font-size: 25px;
+            background-color: rgba(33, 158, 255, 0.85);
+        }
+
+    </style>
+    <script type="text/javascript">
+
+
+        var user = document.getElementById('uname');
+
+
+        function func() {
+            var myTextField = document.getElementById('uname');
+            var pass = document.getElementById('pass');
+            //alert(myTextField.value);
+            if (myTextField.value != "" && myTextField.value.length > 2 && pass.value != "" && pass.value.length > 2) {
+                document.getElementById('txtarea').innerHTML += "<p> Username: <strong> " + myTextField.value + " </strong> Password:<strong>" + pass.value + "</p>";
+            } else {
+                document.getElementById('error').innerHTML = "Invalid data !!";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="form">
+    <form>
+        <h1>Login Form</h1>
+        <fieldset>
+            <legend>Account information</legend>
+            <label for="uname"><span>Username</span></label><br/>
+            <input type="text" placeholder="Username" id="uname"/><br/>
+            <label for="pass"><span>Password</span></label><br/>
+            <input type="password" placeholder="Password.." id="pass"/>
+            <input type="button" value="Login" onclick='func()'/>
+
+            <div id="error"></div>
+        </fieldset>
+    </form>
+</div>
+
+<div id="users">
+    <div id="txtarea">
+        <h1 id="heading">Entered users</h1>
+    </div>
+</div>
+<button onclick="myFunc()" id="btn">Add new dicho</button>
+
+</body>
+</htML>
